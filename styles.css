@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #e0f7fa, #ffe0f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-box {
+  background-color: #ffffff;
+  border: 3px solid #a7d7c5;
+  border-radius: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 600px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.question {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.options div {
+  background: #fefefe;
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.options div:hover {
+  background: #e0f2ff;
+  border-color: #74c0fc;
+}
+
+.options input[type="radio"] {
+  accent-color: #0ea5e9;
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+#butt {
+  width: 70%;
+  padding: 16px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 40px;
+  background-color: #0ea5e9;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#butt:hover {
+  background-color: #0284c7;
+}
+
+#butt:active {
+  transform: scale(0.97);
+  background-color: #0369a1;
+}
